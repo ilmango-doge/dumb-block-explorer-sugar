@@ -1,4 +1,7 @@
 <?php
+
+# Copyright 2018 Jonas Schnelli
+
 ############################
 # CONFIG SECTION           #
 ############################
@@ -6,11 +9,11 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
   $MAIN_ENDPOINT = "http://127.0.0.1:8332/";
   $TEST_ENDPOINT = "http://127.0.0.1:18332/";
-  define("BASE_URL", "/explorer/");
+  define("BASE_URL", "/sugar-explorer/");
   define("USE_MOD_REWRITE", true);
   // enable mod rewrite mode to have nice URLs like /block/<hash> instead of index.php?block=<hash>
-  $FOOTER = '<a href="https://github.com/jonasschnelli/dumb-block-explorer">Dumb Block Explorer</a> for Bitcoin Core';
-  $TITLE = "Dumb Block Explorer";
+  $FOOTER = '<a href="https://github.com/ilmango-doge/dumb-block-explorer-sugar">Dumb Block Explorer Sugar</a> for Sugarchain Yumekawa';
+  $TITLE = "Dumb Block Explorer Sugar";
 ###### END CONFIG SECTION
   $HTMLTITLE = $TITLE;
   abstract class ViewType { const Overview = 0; const Block = 1; const Transaction = 2; const NotFound = 3; };
@@ -239,7 +242,7 @@ span.text-muted.spent {
 </style>
 </head>
 <body class="bg-light">
-  
+
 <div class="w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
